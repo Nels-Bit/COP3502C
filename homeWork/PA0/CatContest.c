@@ -4,10 +4,10 @@
 
 int main(void){
     
-    // declaring the array withouts MALLOC, MAXCATS is defined in header
+    // declaring the array without MALLOC, MAXCATS is defined in header
     struct cat allCats[MAXCATS];
 
-    // variable top store actual amount of cats
+    // variable to store actual amount of cats
     int numCats = 0;
 
     // read all the data
@@ -60,13 +60,13 @@ int main(void){
 
 }
 
-void readData(struct cat *cats, int *count){
+void readData(struct cat *cats, int *c){
 
     // receive total number of cats
-    scanf("%d", count);
+    scanf("%d", c);
 
     // loop through and assing data to cat
-    for(int i = 0; i < *count; i++){
+    for(int i = 0; i < *c; i++){
         scanf("%d", &cats[i].cat_ID);
         scanf("%s", cats[i].name);
         scanf("%d", &cats[i].score1);
